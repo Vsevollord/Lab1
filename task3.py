@@ -19,8 +19,8 @@ def bin_search(a, n):
 if __name__ == '__main__':
     sizes=[100, 1000, 5000, 10000]
     for i in sizes:
-        arr = generate_array(i)
-        n = random.randint(0, 100)
+        arr = sorted(generate_array(i))
+        n = random.randint(0, 100000)
         t = measure_time2(bin_search, arr,n)
 
         print(f"{i:6d} | {t:10.6f}")

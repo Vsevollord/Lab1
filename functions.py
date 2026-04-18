@@ -26,7 +26,7 @@ def measure_time2(func, data1,data2):
 def generate_array(n):
     arr = []
     for i in range(n):
-        arr.append(random.randint(0, 100))
+        arr.append(random.randint(0, 100000))
     return arr
 
 def print_matrrix(matrix):
@@ -34,3 +34,5 @@ def print_matrrix(matrix):
       for element in row:
           print(f"{element:3d}", end=' ')
       print()
+
+
